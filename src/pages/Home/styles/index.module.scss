@@ -1,0 +1,12 @@
+@import '#/colors.scss';
+@import '#/breakpoints.scss';
+
+.testLine {
+  height: 2px;
+  background-color: $orange;
+  margin: 10px 0;
+
+  @include media(desktop) {
+    background-color: $white-blue;
+  }
+}

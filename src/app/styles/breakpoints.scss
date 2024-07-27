@@ -1,0 +1,9 @@
+$breakpoint-desktop: 1024px;
+
+@mixin media($breakpoint) {
+  @if $breakpoint == desktop {
+    @media (max-width: $breakpoint-desktop) {
+      @content;
+    }
+  }
+}
